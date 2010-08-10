@@ -1,0 +1,28 @@
+#crm-container .crm-contact-page {
+    background-color: #6FC0F3;
+    position: relative;
+    padding: 4px;
+    }
+#crm-container #mainTabContainer {
+    background-color: transparent;
+    padding: 0px;
+    }
+    
+#mainTabContainer .crm-contact-tabs-list {
+    width: 15%;
+    float:left;
+    padding:4px;
+    }
+    #mainTabContainer li.crm-tab-button {
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        }
+
+#crm-container .ui-tabs-panel {
+    float: right;
+    width: 83%;
+    background-color: #FFF;
+    }
+   
+.ui-widget-content { background: transparent; } /* override of jquery-ui.css that creates weird white background */    

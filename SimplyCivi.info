@@ -1,0 +1,18 @@
+name = SimplyCivi
+description = An admin theme for CiviCRM
+core = 6.x
+
+stylesheets[screen,projection][] = css/base.css
+stylesheets[screen,projection][] = css/contact.css
+stylesheets[screen,projection][] = css/menu.css
+stylesheets[screen,projection][] = css/colors.css
+stylesheets[screen,projection][] = css/contact-tabs.css
+
+scripts[] = js/general.js
+
+regions[left] = First sidebar
+regions[right] = Second sidebar
+regions[content] = Main Content
+
+regions[dashboard] = Recent Items / Dashboard
+regions[quickadd] = Quick add / Popout

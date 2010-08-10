@@ -1,0 +1,12 @@
+body {
+    font-family: Helvetica, Arial, Sans;
+    }
+#page {
+    width:960px;
+    margin:0px auto;
+    }
+
+ul li, ul.menu li, .item-list ul li, li.leaf {
+    list-style-image:none;
+}
+
