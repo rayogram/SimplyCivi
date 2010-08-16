@@ -1,0 +1,94 @@
+/* =================== */
+/* ! footer override   */
+/* =================== */
+
+#access {
+    float: right;
+    }
+
+#crm-container #civicrm-footer { 
+    margin:0 0 3em 0;
+    border-top: 0px;
+    text-align: left;
+    }
+
+/* ======================== */
+/* ! layout & positioning   */
+/* ======================== */
+
+#bottom-wrapper {
+    position: fixed;
+    width:100%;
+    bottom: 0px;
+    height:23px;
+    padding: 4px 0px;
+    background: transparent url(../images/bottom-bg.jpg) repeat-x scroll left top;
+    z-index: 5;
+    }
+
+#bottom {
+    position: relative;
+    }
+
+.bottom-element {
+    float:left;
+    margin-right: 1em;
+    }
+#quickadd {
+    float: right;
+    margin-right:0px;
+    }
+    
+.bottom-element h3 {
+    display: none;
+    }    
+
+.bottom-element a {
+    color: #5E5F5F;
+    text-decoration: none;
+    }
+
+/* ============== */
+/* ! create new   */
+/* ============== */
+
+#create-new-record { margin-left: 5px;}
+
+#create-new-record #crm-create-new-list {
+    bottom:4px;
+    top:auto;
+    background: transparent url(../images/icons/overlay-pointer.png) no-repeat scroll bottom left;
+    padding: 0 0 5px 0;
+    }
+#create-new-record .dropdown-icon {
+    background-position:2px -33px;
+    }
+
+/* ================ */
+/* ! recent items   */
+/* ================ */
+
+#recent-items { 
+    width: 960px;
+    margin: 0px auto;
+    }
+
+#recent-items h3 {
+    display: block;
+    float: left;
+    font-size: 11px;
+    color: #666;
+    font-weight: normal;
+    margin:4px 0px
+    }
+
+#recent-items #recently-viewed li {
+    background-color: transparent;
+    border: none;
+    float: left;
+    margin-right:1em;
+    }
+    
+    #recent-items div#recently-viewed a {
+        color:#5E5F5F;
+        }

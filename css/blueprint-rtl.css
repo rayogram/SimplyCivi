@@ -1,0 +1,29 @@
+
+html, body{
+  direction: rtl;
+}
+
+#logo h1 a {
+	text-indent:99999em;
+	overflow: hidden;
+}
+
+ul.links li{
+  float:right;
+
+}
+
+ul.links li.first{
+  padding: 0 0 0 0.5em;
+}
+
+ul li.collapsed {
+  list-style-image:url(../images/icons/menu-collapsed-rtl.gif);
+}
+
+
+div.block.with-block-editing div.edit
+{
+  left: 0 !important;
+  right: inherit !important;
+}
