@@ -26,9 +26,19 @@
 <body class="<?php print $body_classes; ?>">
 
 <div class="container">
+  
   <div id="header-wrapper">
   <div id="header">
-      
+      <div id="status">
+   	<div class="messages-container">
+       <?php	if ($messages != '') {?>
+   		<div id="messages">
+   		 <?php print $messages; ?>
+   		 </div>
+   		 
+       <?php } ?>
+       </div>
+  </div>
       <h1 id="logo">
         <?php print $logo_block; ?>
       </h1>
