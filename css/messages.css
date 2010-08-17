@@ -2,6 +2,8 @@ div.messages {
   margin-bottom:0px;
   padding: 0.68em;
   font-weight: normal;
+  border:none;
+  border-left:2px solid;  
 }
 
 
@@ -16,6 +18,7 @@ div.messages ul {
 	}
 #status-handle .ui-icon {
 	margin: 0px auto;
+	background-image: url(../images/icons/ui-icons_454545_256x240.png);
 	}
 
 #status-handle {
