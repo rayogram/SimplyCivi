@@ -2,14 +2,18 @@
 /* ! footer override   */
 /* =================== */
 
-#access {
+#access,
+#record-log {
     float: right;
+    color: #FFF;
     }
+    #record-log .col1 {width:auto;}
 
 #crm-container #civicrm-footer { 
     margin:0 0 3em 0;
     border-top: 0px;
     text-align: left;
+    color:#FFF;
     }
 
 /* ======================== */
@@ -90,5 +94,5 @@
     }
     
     #recent-items div#recently-viewed a {
-        color:#5E5F5F;
+        color:#2786C2;
         }
