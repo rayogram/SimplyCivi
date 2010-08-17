@@ -157,6 +157,10 @@ div.form-item {
   margin-top: 1.5em;
 }
 
+.form-item label {
+    font-weight:normal;
+    }
+
 div.error, tr.error, span.form-required, span.marker {
   color: #8A1F11;
 }
@@ -547,3 +551,24 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
     list-style-image:none;
 }
 
+
+/* ================= */
+/* ! civicrm fixes   */
+/* ================= */
+
+input.form-submit {
+    text-shadow:0 1px 0 black;	
+    background:#70716B url(../images/crm-button-bg.gif) repeat-x top left;
+    color: #FFF;
+    font-size:12px;
+    font-weight:normal;
+    margin-right: 6px;
+    padding: 2px 6px;
+    text-decoration: none;
+    cursor: pointer;
+    border:1px solid #3e3e3e;
+    -moz-border-radius: 	3px; 
+	-webkit-border-radius: 	3px;   
+	-khtml-border-radius: 	3px; 
+	border-radius:			3px;
+    }

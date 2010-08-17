@@ -32,15 +32,14 @@
 
 #bottom {
     position: relative;
+    top:-20px;
     }
 
 .bottom-element {
-    float:left;
     margin-right: 1em;
     }
 #quickadd {
     float: right;
-    margin-right:0px;
     }
     
 .bottom-element h3 {
@@ -96,3 +95,64 @@
     #recent-items div#recently-viewed a {
         color:#2786C2;
         }
+
+/* ================ */
+/* ! quick create   */
+/* ================ */
+
+#bottom #quickadd .block {
+    position: relative;
+    z-index: 15;
+    top:-12px;
+    margin:0px;
+    }
+
+#bottom #quickadd h3 { 
+    display: block;
+    -moz-border-radius: 	3px; 
+	-webkit-border-radius: 	3px;   
+	-khtml-border-radius: 	3px; 
+	border-radius:			3px;
+	background:#70716B url(../images/crm-button-bg.gif) repeat-x scroll left top;
+    border:1px solid #3E3E3E;
+    color:#FFFFFF;
+    cursor:pointer;
+    font-size:12px;
+    font-weight:normal;
+    margin-right:6px;
+    padding:2px 6px;
+    text-decoration:none;
+    text-shadow:0 1px 0 black;
+    }
+
+#bottom #quickadd .form-item {
+    margin:4px 0px;
+    }
+
+#bottom #quickadd .content {
+    background:transparent url(../images/icons/overlay-pointer.png) no-repeat scroll 60px bottom;
+    bottom:28px;
+    padding:0 0 5px;
+    top:auto;
+    right:0px;
+    z-index:9999;
+    position: absolute;
+    padding:0 0 5px;
+    font-weight: normal;
+    display: none;
+    }
+
+
+#bottom #quickadd #crm-quick-create {
+    -moz-border-radius: 	4px; 
+	-webkit-border-radius: 	4px;   
+	-khtml-border-radius: 	4px; 
+	border-radius:			4px; 
+    padding:4px;
+    background-color:#2F2F2E;
+    color:#DFDFDF;
+    }
+
+#bottom #quickadd #crm-quick-create input.form-submit {
+    border-color: #000;
+    }

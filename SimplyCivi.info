@@ -19,6 +19,7 @@ stylesheets[screen,projection][] = css/civicrm-theme.css
 
 
 scripts[] = scripts/messages.js
+scripts[] = scripts/quickadd.js
 scripts[] = scripts/general.js
 
 screenshot = screenshot.png
