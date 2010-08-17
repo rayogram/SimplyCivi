@@ -1,0 +1,27 @@
+.ui-icon {
+    background-image:url(../images/icons/ui-icons_454545_256x240.png);
+    }
+    
+.crm-icon,
+.block-civicrm #recently-viewed .crm-icon {
+    background-image:url(../images/icons/crm-icons.png);
+    margin:2px 4px 0 0;
+    }
+.Individual-icon { 	background-position: 0px 	-162px; }
+.Group-icon { 		background-position: 0px 	-178px; }
+.Household-icon { 	background-position: 0px 	-48px; }
+
+.Individual-subtype-icon { 		background-position: 0px 	-162px; }
+.Household-subtype-icon { 		background-position: 0px 	-48px; }
+.Organization-subtype-icon { 	background-position: 0px 	-112px; }
+
+.Organization-icon { 	background-position: 0px -112px; }
+.Activity-icon { 		background-position: 0px -64px; }	
+.Case-icon { 			background-position: 0px -82px; }
+.Grant-icon { 			background-position: 0px -144px; }
+.Contribution-icon { 	background-position: 0px -128px; }
+.Pledge-icon { 			background-position: 0px -129px; }
+.Membership-icon { 		background-position: 0px 0px; }
+.Participant-icon { 	background-position: 0px  -32px; }
+.Note-icon { 			background-position: 0px -16px; }
+.Relationship-icon { 	background-position: 0px 0px; }
