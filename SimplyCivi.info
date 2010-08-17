@@ -12,8 +12,11 @@ stylesheets[screen,projection][] = css/header.css
 stylesheets[screen,projection][] = css/contact.css
 stylesheets[screen,projection][] = css/colors.css
 stylesheets[screen,projection][] = css/contact-tabs.css
+stylesheets[screen,projection][] = css/accordions.css
 stylesheets[screen,projection][] = css/bottom.css
+stylesheets[screen,projection][] = css/icons.css
 stylesheets[screen,projection][] = css/civicrm-theme.css
+
 
 scripts[] = scripts/messages.js
 scripts[] = scripts/general.js

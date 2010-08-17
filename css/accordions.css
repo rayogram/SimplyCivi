@@ -1,0 +1,49 @@
+/* ============================================ */
+/* ! fixes to accordions - should be in 3.2.3   */
+/* ============================================ */
+
+
+#crm-container .crm-accordion-wrapper{
+    margin-bottom: 4px;
+    }
+
+
+
+#crm-container .crm-accordion-open .crm-accordion-header {
+    -moz-border-radius: 4px 4px 0px 0px; 
+    -webkit-border-radius: 4px 4px 0px 0px;   
+    -khtml-border-radius: 4px 4px 0px 0px; 
+    border-radius:4px 4px 0px 0px;
+    margin-bottom:0px; 
+    }
+
+#crm-container .crm-accordion-open .crm-accordion-body {
+    -moz-border-radius: 0px 0px 4px 4px; 
+    -webkit-border-radius: 0px 0px 4px 4px;   
+    -khtml-border-radius: 0px 0px 4px 4px; 
+    border-radius:0px 0px 4px 4px;
+    
+    border:1px solid #70716B;
+    padding: 4px; 
+    }
+
+#crm-container .crm-accordion-closed .crm-accordion-header {
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px;   
+    -khtml-border-radius: 4px; 
+    border-radius:4px; 
+    }
+
+
+
+/* ==================================================================================== */
+/* ! hack to force pages with master accordions 
+     to work, needs updating of tpl files   */
+/* ==================================================================================== */
+
+
+    
+#crm-container .crm-master-accordion-header+.crm-accordion-body  { 
+    border:none;
+    padding: 0px;
+    }
