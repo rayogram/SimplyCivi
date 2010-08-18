@@ -3,9 +3,8 @@ div.messages {
   padding: 0.68em;
   font-weight: normal;
   border:none;
-  border-left:2px solid;  
+  border-left:1px solid;  
 }
-
 
 div.messages ul {
   margin-bottom: 0;
