@@ -65,36 +65,6 @@ function SimplyCivi_preprocess_page(&$vars) {
     $vars['head_title'] = strip_tags($vars['head_title']);
   }
 
-
-  // determine layout
-  // 3 columns
-  if ($vars['layout'] == 'both') {
-    $vars['left_classes'] = 'col-left span-6';
-    $vars['right_classes'] = 'col-right span-6 last';
-    $vars['center_classes'] = 'col-center span-12';
-    $vars['body_classes'] .= ' col-3 ';
-  }
-
-  // 2 columns
-  elseif ($vars['layout'] != 'none') {
-    // left column & center
-    if ($vars['layout'] == 'left') {
-      $vars['left_classes'] = 'col-left span-6';
-      $vars['center_classes'] = 'col-center span-18 last';
-    }
-    // right column & center
-    elseif ($vars['layout'] == 'right') {
-      $vars['right_classes'] = 'col-right span-6 last';
-      $vars['center_classes'] = 'col-center span-18';
-    }
-    $vars['body_classes'] .= ' col-2 ';
-  }
-  // 1 column
-  else {
-    $vars['center_classes'] = 'col-center span-24';
-    $vars['body_classes'] .= ' col-1 ';
-  }
-
   //Perform RTL - LTR swap and load RTL Styles.
   if ($vars['language']->dir == 'rtl') {
     // Remove SimplyCivi Grid and use RTL grid
