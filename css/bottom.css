@@ -55,7 +55,10 @@
 /* ! create new   */
 /* ============== */
 
-#create-new-record { margin-left: 5px;}
+#create-new-record { 
+    margin-left: 5px;
+    float: left;
+    }
 
 #create-new-record #crm-create-new-list {
     bottom:4px;
