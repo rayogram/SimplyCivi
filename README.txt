@@ -30,33 +30,62 @@ Richard Burford, aka, psynaptic
 
 --- INSTALLATION --------------------------------------------------------
 
-1. Place the SimplyCivi folder in your themes directory.
+1. have a working version of CiviCRM installed on your Drupal site
 
-2. Enable theme under Administer > Site building > Themes
+2. Download the latest version of the SimplyCivi theme:
 
-3. Download and enable the civicrm_theme module at http://www.drupal.org/project/civicrm_theme
+	http://github.com/kylejaster/SimplyCivi/zipball/master
 
-4. Configure http://yoursite/admin/settings/admin to use the SimplyCivi theme for "CiviCRM Admin Pages"
+	Place it in you sites/all/themes directory (you may wish to rename the 
+    directory to "SimplyCivi" - github adds a silly name) and enable it at 
+    admin/build/themes
 
-5. Add your CiviCRM Blocks in the SimplyCivi theme : http://yoursite/admin/build/block/list/SimplyCivi :
+3. Download, install and enable the civicrm_theme module:
+
+	http://drupal.org/project/civicrm_theme
+
+4. Visit the Admin Theme configuration page at: admin/settings/admin
+	
+	Configure the "CiviCRM Administration Theme" to use "SimplyCivi"
+
+5. Configure your CiviCRM blocks for the SimplyCivi theme at: 
+	
+	admin/build/block/list/SimplyCivi
+
+	There are regions for many of the blocks CiviCRM provides, simply match 
+	the blocks to the regions (place "CiviCRM full text search" into the 
+	"Header" region)
+
+	Additional blocks may be put into the Left and Right sidebars - these 
+	are hidden by default, but show tabs on the left and right sides of 
+	the screen when enabled.
+
+    Once you have configured your blocks, you are done! 
     
-    There are regions setup for Recent Items, Quick Add and Create New Record.
-    
-    You can add "Full Text Search" to the Header, and it will configure itself
+    Visit yoursite.org/civicrm/dashboard?reset=1 and 
+    enjoy your clean new CiviCRM admin theme. 
+
 
 
 --- FEATURES --------------------------------------------------------
 
 - normalizes Drupal's CSS to be consistent
-- properly aggregates all SimplyCivi CSS files into a single file when this setting is enabled
+
+- properly aggregates all SimplyCivi CSS files into a single file 
+  when this setting is enabled
+
 - Adds custom icons for contact types
+
 - Contact tabs are in a "sidebar" 
-- Drupal and CiviCRM messages are aggregated and positioned at the top of the page, clearly visible and hideable
-- CSS alterations to CiviCRM are broken out for easy adoption into your own theme
-- single column design for best use of CiviCRM while maintaining easy access to existing sidebars for your actual site
-- Getting close to full support of Drupal KIT theme specification http://drupal.org/project/kit
 
-Drupal 6 version:
-- Hover over blocks to reveal admin links to edit and configure the blocks as well as edit the menu blocks.
-- Support for sub-themes.
+- Drupal and CiviCRM messages are aggregated and positioned at the top 
+  of the page, clearly visible and hideable
 
+- CSS alterations to CiviCRM are broken out for easy adoption into your 
+  own theme
+
+- single column design for best use of CiviCRM while maintaining easy 
+  access to existing sidebars for your actual site
+
+- Getting close to full support of Drupal KIT theme specification 
+  http://drupal.org/project/kit
