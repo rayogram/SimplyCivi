@@ -6,6 +6,7 @@
     position:relative;
     }
 
+#crm-container h3,
 .ac_results-inner, 
 .crm-participant-list-inner, 
 .crm-event-links-list-inner, 
@@ -15,4 +16,38 @@
     -webkit-border-radius: 4px;   
     -khtml-border-radius: 4px; 
     border-radius:4px;
+    }
+#crm-container h3 {
+    color:#3E3E3E;
+    }
+
+#civicrm-menu { background-color: #2F2F2E; }
+
+#root-menu-div ul { 
+    border:none;    
+    background-color: #3f3f3e;
+    border-left: 1px solid #2f2f2e;
+    }
+
+#crm-container div#printer-friendly { 
+    position: absolute;
+    right:4px;
+    top:10px;
+    margin:0px;
+    }
+
+
+div#crm-toolTip { bottom: 30px; }
+
+input.form-text, 
+textarea,
+#crm-container input[type="text"], 
+#crm-container input[type="password"],
+#crm-container select,
+#crm-container textarea {
+    border:1px solid #CCCCCC;
+    -moz-border-radius:     2px; 
+    -webkit-border-radius:  2px;   
+    -khtml-border-radius:   2px; 
+    border-radius:          2px;    
     }

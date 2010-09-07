@@ -2,7 +2,67 @@
     position: relative;
     }
 #logo {
-    margin-left:-100px;
+    position: absolute;
+    top:5px;
+    left:-100px;
     }
+#site_name {
+    padding-top: 27px;
+    margin:6px 0px;
+    }
+.has-messages #site_name {padding-top:0px;}
 
 #header a { text-decoration: none; }
+
+/* ===================== */
+/* ! style breadcrumbs   */
+/* ===================== */
+
+.breadcrumb a,
+.breadcrumb a:visited {
+    color:#FFF;
+    text-decoration: none;
+    }
+
+.breadcrumb {
+    background-color: #96C0E7;
+    padding: 4px;
+    -moz-border-radius: 	4px; 
+    -webkit-border-radius: 	4px;   
+    -khtml-border-radius: 	4px; 
+    border-radius:			4px;
+  }
+
+
+
+/* ================================== */
+/* ! full text search block in header */
+/* ================================== */
+
+
+#header #block-civicrm-7 {
+    position: absolute;
+    right:0px;
+    bottom:0px;
+    background-color: #96C0E7;
+    padding: 4px;
+    -moz-border-radius: 	4px; 
+    -webkit-border-radius: 	4px;   
+    -khtml-border-radius: 	4px; 
+    border-radius:			4px;
+    margin-bottom: 0px;
+    }
+
+#header #block-civicrm-7 h3 { 
+    display: none;
+    }
+
+#header #block-civicrm-7 input#text {
+    background-color:#FFFFFF;
+    border:1px solid #CCC;
+    padding:3px;
+    -moz-border-radius: 	2px; 
+    -webkit-border-radius: 	2px;   
+    -khtml-border-radius: 	2px; 
+    border-radius:			2px;
+    }

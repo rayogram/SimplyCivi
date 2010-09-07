@@ -1,5 +1,12 @@
 /* print.css */
-body {line-height:1.5;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;color:#000;background:#7FCDFE url(../images/bg.png) repeat-x top left;font-size:10pt;}
+body {
+    line-height:1.5;
+    font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+    color:#000;
+    background-color:#F8F8F8;
+    font-size:10pt;
+    overflow-x: hidden;
+    }
 .container {background:none;}
 hr {background:#ccc;color:#ccc;width:100%;height:2px;margin:2em 0;padding:0;border:none;}
 hr.space {background:#fff;color:#fff;visibility:hidden;}
@@ -14,16 +21,16 @@ blockquote {margin:1.5em;padding:1em;font-style:italic;font-size:.9em;}
 .hide {display:none;}
 a:link, a:visited {background:transparent;font-weight:normal;text-decoration:underline;}
 
-
-
-
-
 #header,
+#breadcrumb-wrapper,
 #container,
 #footer {
     width:960px;
     margin:0px auto;
     }
+
+#container { position: relative;}
+
 /* @group blueprint overrides */
 
 body {
@@ -31,7 +38,7 @@ body {
 }
 
 div.container {
-  margin: 23px auto 30px auto;
+  margin: 23px auto 0px auto;
 }
 
 a:link {
@@ -47,7 +54,7 @@ a:hover,a:focus,a:active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #222;
+  color: #556C82;
 }
 
 thead th, th {
@@ -91,7 +98,7 @@ div.messages {
 }
 
 div.messages.success {
-  border: 1px solid #7AC142;
+  border-left: 1px solid #7AC142;
   color: #55872E;
   background: #F1F8EB;
 }
@@ -129,11 +136,6 @@ div.admin .right {
 #user-admin-filter ul li,
 #node-admin-filter ul li {
   list-style: none; /* remove list style from content node filter */
-}
-
-.breadcrumb {
-  padding-bottom: 0;
-  margin-bottom: 1.5em;
 }
 
 .more-help-link {
@@ -572,3 +574,4 @@ input.form-submit {
 	-khtml-border-radius: 	3px; 
 	border-radius:			3px;
     }
+

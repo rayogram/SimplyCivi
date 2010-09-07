@@ -1,1 +1,16 @@
 /* put your custom CSS in here */
+
+#header-wrapper {
+    padding:0px 0px 1px 0px;
+    }
+
+
+#container-wrapper {
+    background-color: #F8F8F8;
+    padding: 1px;
+    }
+
+
+#container h2 {
+    margin:6px 0px;
+    }

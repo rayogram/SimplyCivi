@@ -30,38 +30,33 @@
   <div id="header-wrapper">
   <div id="header">
       <div id="status">
-   	<div class="messages-container">
-       <?php	if ($messages != '') {?>
-   		<div id="messages">
-   		 <?php print $messages; ?>
-   		 </div>
-   		 
-       <?php } ?>
+   	    <div class="messages-container">
+        <?php	if ($messages != '') :?>
+   		   <div id="messages">
+   	        <?php print $messages; ?>
+   		   </div>
+       <?php endif; ?>
        </div>
-  </div>
-      <h1 id="logo">
-        <?php print $logo_block; ?>
+      </div>
+      <div id="logo">
+        <img src="<?php print $logo; ?>" />
+      </div>
+      <h1 id="site_name">
+        <?php print $site_name; ?>
       </h1>
-      <?php
-      if ($breadcrumb != '') {
-        print $breadcrumb;
-      }
-      ?>
+        
+      
       <?php if ($search_box): ?>
         <div id="search-box" class="span-8 last prepend-16">
           <?php print $search_box; ?>
         </div> <!-- /#search-box -->
       <?php endif; ?>
     <?php print $header; ?>
-    <?php if (isset($primary_links)) : ?>
-      <?php print theme('links', $primary_links, array('id' => 'nav', 'class' => 'links primary-links')) ?>
-    <?php endif; ?>
-    <?php if (isset($secondary_links)) : ?>
-      <?php print theme('links', $secondary_links, array('id' => 'subnav', 'class' => 'links secondary-links')) ?>
-    <?php endif; ?>
+    <?php if ($breadcrumb != '') :?>
+      <?php print $breadcrumb; ?>
+  <? endif; ?>
   </div>
   </div>
-  
   <div id="container-wrapper">
   <div id="container">
     <?php
@@ -98,11 +93,27 @@
   </div>
   
   </div>
-  <?php if ($left): ?>
-    <div class="<?php print $left_classes; ?>"><?php print $left; ?></div>
+  <?php if ($left || isset($primary_links) || isset($secondary_links)): ?>
+    <div id="left-sidebar" class="sidebar-wrapper">
+        <div id="left-sidebar-handle"><span class="ui-icon ui-icon-arrowthickstop-1-e"></span></div>
+        <div class="sidebar-contents">
+            <?php if (isset($primary_links)) : ?>
+              <?php print theme('links', $primary_links, array('id' => 'nav', 'class' => 'links primary-links')) ?>
+            <?php endif; ?>
+            <?php if (isset($secondary_links)) : ?>
+              <?php print theme('links', $secondary_links, array('id' => 'subnav', 'class' => 'links secondary-links')) ?>
+            <?php endif; ?>
+            <?php print $left; ?>
+        </div>
+    </div>
   <?php endif ?>
   <?php if ($right): ?>
-    <div class="<?php print $right_classes; ?>"><?php print $right; ?></div>
+    <div id="right-sidebar" class="sidebar-wrapper">
+        <div id="right-sidebar-handle"><span class="ui-icon ui-icon-arrowthickstop-1-w"></span></div>
+        <div class="sidebar-contents">
+            <?php print $right; ?>
+        </div>
+    </div>
   <?php endif ?>
   <?php if ($create_new_record | $quickadd | $recent_items): ?>
     <div id="bottom-wrapper">

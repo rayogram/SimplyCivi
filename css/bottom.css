@@ -5,7 +5,7 @@
 #access,
 #record-log {
     float: right;
-    color: #FFF;
+    color: #556C82;
     }
     #record-log .col1 {width:auto;}
 
@@ -13,7 +13,7 @@
     margin:0 0 3em 0;
     border-top: 0px;
     text-align: left;
-    color:#FFF;
+    color:#556C82;
     }
 
 /* ======================== */
@@ -27,7 +27,8 @@
     height:23px;
     padding: 4px 0px;
     background: transparent url(../images/bottom-bg.jpg) repeat-x scroll left top;
-    z-index: 5;
+    z-index: 20;
+    border: 1px solid #CECECE;
     }
 
 #bottom {
@@ -36,7 +37,7 @@
     }
 
 .bottom-element {
-    margin-right: 1em;
+    margin-right: 18px;
     }
 #quickadd {
     float: right;
@@ -56,15 +57,16 @@
 /* ============== */
 
 #create-new-record { 
-    margin-left: 5px;
+    margin-left: 18px;
     float: left;
     }
 
 #create-new-record #crm-create-new-list {
-    bottom:4px;
+    bottom:28px;
     top:auto;
     background: transparent url(../images/icons/overlay-pointer.png) no-repeat scroll bottom left;
     padding: 0 0 5px 0;
+    width: 140px;
     }
 #create-new-record .dropdown-icon {
     background-position:2px -33px;
@@ -97,7 +99,16 @@
     
     #recent-items div#recently-viewed a {
         color:#2786C2;
+        position: relative;
         }
+        
+    #recent-items div#recently-viewed .crm-tooltip {
+        height: 300px;
+        width:800px;
+        }
+
+    #recent-items div#recently-viewed .crm-tooltip .crm-contact-tabs-list {display: none;}
+
 
 /* ================ */
 /* ! quick create   */

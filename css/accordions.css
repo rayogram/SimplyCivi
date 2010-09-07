@@ -9,7 +9,7 @@
 
 
 
-#crm-container .crm-accordion-open .crm-accordion-header {
+#crm-container .crm-accordion-open>.crm-accordion-header {
     -moz-border-radius: 4px 4px 0px 0px; 
     -webkit-border-radius: 4px 4px 0px 0px;   
     -khtml-border-radius: 4px 4px 0px 0px; 
@@ -17,7 +17,7 @@
     margin-bottom:0px; 
     }
 
-#crm-container .crm-accordion-open .crm-accordion-body {
+#crm-container .crm-accordion-open>.crm-accordion-body {
     -moz-border-radius: 0px 0px 4px 4px; 
     -webkit-border-radius: 0px 0px 4px 4px;   
     -khtml-border-radius: 0px 0px 4px 4px; 
@@ -27,7 +27,7 @@
     padding: 4px; 
     }
 
-#crm-container .crm-accordion-closed .crm-accordion-header {
+#crm-container .crm-accordion-closed>.crm-accordion-header {
     -moz-border-radius: 4px; 
     -webkit-border-radius: 4px;   
     -khtml-border-radius: 4px; 

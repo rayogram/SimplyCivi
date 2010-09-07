@@ -45,14 +45,6 @@ function SimplyCivi_settings($saved_settings, $subtheme_defaults = array()) {
   );
 
   // Setting for flush all caches
-  $form['SimplyCivi_dev']['SimplyCivi_block_edit_links'] = array(
-     '#type'          => 'checkbox',
-     '#title'         => t('Display block editing links.'),
-     '#default_value' => $settings['SimplyCivi_block_edit_links'],
-     '#description'   => t('When hovering over blocks, display edit links for the proper users.'),
-    );
-
-  // Setting for flush all caches
   $form['SimplyCivi_dev']['SimplyCivi_rebuild_registry'] = array(
      '#type'          => 'checkbox',
      '#title'         => t('Rebuild the theme registry on every page.'),
@@ -60,13 +52,6 @@ function SimplyCivi_settings($saved_settings, $subtheme_defaults = array()) {
      '#description'   => t('During theme development, it can be very useful to continuously <a href="!link">rebuild the theme registry</a>. WARNING: this is a huge performance penalty and must be turned off on production websites.', array('!link' => 'http://drupal.org/node/173880#theme-registry')),
     );
 
-  // Setting to add the showgrid class
-  $form['SimplyCivi_dev']['SimplyCivi_showgrid'] = array(
-     '#type'          => 'checkbox',
-     '#title'         => t('Show the SimplyCivi Grid'),
-     '#default_value' => $settings['SimplyCivi_showgrid'],
-     '#description'   => t('During theme development, it can be very useful to turn on the display of the grid.'),
-    );
   $form['SimplyCivi_animated_submit'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Prevent Duplicate Submits'),

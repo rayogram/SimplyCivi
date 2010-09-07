@@ -8,6 +8,7 @@ engine = phptemplate
 stylesheets[screen,projection][] = css/base.css
 stylesheets[screen,projection][] = css/menu.css
 stylesheets[screen,projection][] = css/messages.css
+stylesheets[screen,projection][] = css/sidebars.css
 stylesheets[screen,projection][] = css/header.css
 stylesheets[screen,projection][] = css/contact.css
 stylesheets[screen,projection][] = css/colors.css
@@ -15,17 +16,23 @@ stylesheets[screen,projection][] = css/contact-tabs.css
 stylesheets[screen,projection][] = css/accordions.css
 stylesheets[screen,projection][] = css/bottom.css
 stylesheets[screen,projection][] = css/icons.css
+stylesheets[screen,projection][] = css/style.css
+
+;the civicrm-theme.css file only contains overrides for declarations in civicrm.css 
 stylesheets[screen,projection][] = css/civicrm-theme.css
 
 
 scripts[] = scripts/messages.js
+scripts[] = scripts/sidebars.js
 scripts[] = scripts/quickadd.js
+scripts[] = scripts/recent-items.js
 scripts[] = scripts/general.js
+scripts[] = scripts/search.js
 
 screenshot = screenshot.png
 
-regions[left] = First sidebar
-regions[right] = Second sidebar
+regions[left] = Left sidebar
+regions[right] = Right sidebar
 regions[content] = Content
 regions[header] = Header
 regions[footer] = Footer

@@ -5,6 +5,7 @@ $(document).ready(function() {
         });
 	$('#crm-container .messages').appendTo('#status .messages-container');
 	if($('#status .messages-container').children().length > 0) {
+	    $('body').addClass('has-messages');
 		$('#status').append('<div id="status-handle"><span class="ui-icon ui-icon-arrowthickstop-1-n"></span></div>');
 	}
 	$('#status-handle').click(function(){
