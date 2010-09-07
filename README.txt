@@ -59,21 +59,6 @@ Drupal 6 version:
 - Hover over blocks to reveal admin links to edit and configure the blocks as well as edit the menu blocks.
 - Support for sub-themes.
 
---- TIPS --------------------------------------------------------
-
-- put your custom styles in css/style.css
-- put any IE hacks into css/ie.css (conditionally loaded as needed)
-- admin/build/themes/settings
-  - enable site slogan (add one, good for SEO)
-  - enable mission statement (used as META description for homepage in search engines)
-  - enable user pictures
-- Configure the comments for each node type 
-  - admin/content/node-type/<typename> - Flat list - expanded, Date - oldest first, Display below post or comments.
-  - You will need to do this for each content type that has comments enabled.
-- (performance) remove line 76 in screen.css : .showgrid {background:url(src/grid.png);}  
-  this saves an uncessary HTTP request on your server
-- (performance) apply system.css.patch to remove uncessary HTTP requests to images that SimplyCivi overrides already
-
 
 SimplyCivi theme includes Blueprint's two ways of adding a logo: via the $logo variable or via css. There is a setting in the theme settings to choose your method.
 --- NOTE: -----------------------------------------------------------
