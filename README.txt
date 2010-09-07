@@ -42,11 +42,11 @@ Richard Burford, aka, psynaptic
     
     There are regions setup for Recent Items, Quick Add and Create New Record.
     
-    You can add "Full Text Search" to the Header, and it will configure itself with a few bonuses.
+    You can add "Full Text Search" to the Header, and it will configure itself
+
 
 --- FEATURES --------------------------------------------------------
 
-- Getting close to full support of Drupal KIT theme specification http://drupal.org/project/kit
 - normalizes Drupal's CSS to be consistent
 - properly aggregates all SimplyCivi CSS files into a single file when this setting is enabled
 - Adds custom icons for contact types
@@ -54,6 +54,7 @@ Richard Burford, aka, psynaptic
 - Drupal and CiviCRM messages are aggregated and positioned at the top of the page, clearly visible and hideable
 - CSS alterations to CiviCRM are broken out for easy adoption into your own theme
 - single column design for best use of CiviCRM while maintaining easy access to existing sidebars for your actual site
+- Getting close to full support of Drupal KIT theme specification http://drupal.org/project/kit
 
 Drupal 6 version:
 - Hover over blocks to reveal admin links to edit and configure the blocks as well as edit the menu blocks.
