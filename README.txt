@@ -59,18 +59,3 @@ Drupal 6 version:
 - Hover over blocks to reveal admin links to edit and configure the blocks as well as edit the menu blocks.
 - Support for sub-themes.
 
-
-SimplyCivi theme includes Blueprint's two ways of adding a logo: via the $logo variable or via css. There is a setting in the theme settings to choose your method.
---- NOTE: -----------------------------------------------------------
-
-If you use the css method, here are some tips for adding it.
-
-h1 a{
-width: [width of logo];
-height: [height of logo];
-display:block;
-text-indent: -99999em;
-background: url(../images/logo.png) no-repeat left top;
-}
-
-What this ends up doing is removing the text title of the site, and replacing it with a background image of the logo that is still linked to the homepage of the site.
