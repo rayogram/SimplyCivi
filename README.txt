@@ -1,14 +1,22 @@
-# $Id: README.txt,v 1.18.2.2.2.12.2.1 2009/12/07 17:32:59 designerbrent Exp $
+# $Id: README.txt,v 1 2010/09/07 16:00:00 kylejaster Exp $
 
 
 --- README  -------------------------------------------------------------
 
-SimplyCivi, Version 2.x
+SimplyCivi, Version 1.x
+
+Design and Development by Kyle Jaster for rayogram
+kyle@rayogram.com
+http://rayogram.com
+
+Requirements: Drupal 6.x
+Recommended: CiviCRM 3.2.x, civicrm_theme module
+
+Much borrowed from the Blueprint theme (except, not blueprint.css!) hard work by:
 
 Brent Hardinge, aka, designerbrent
  designerbrent@gmail.com
  http://brenthardinge.net/
- 
  
 Contributors:
 
@@ -20,43 +28,30 @@ Richard Burford, aka, psynaptic
  rich@freestylesystems.co.uk
  http://www.freestylesystems.co.uk
 
-Requirements: Drupal 6.x, SimplyCivi Framework downloaded from SimplyCivicss.org
-
-
 --- INSTALLATION --------------------------------------------------------
 
 1. Place the SimplyCivi folder in your themes directory.
 
-2. Download SimplyCivi http://www.SimplyCivicss.org/
-   a. Extract folder, creating something like "joshuaclayton-SimplyCivi-css-28c8aa9ae2686442e00a5c7f46dfe2de76b3bd83"
-   b. Rename to "framework"
-   c. Ensure your path looks like themes/SimplyCivi/SimplyCivi/framework/SimplyCivi/screen.css
+2. Enable theme under Administer > Site building > Themes
 
-3. Enable theme under Administer > Site building > Themes
+3. Download and enable the civicrm_theme module at http://www.drupal.org/project/civicrm_theme
 
+4. Configure http://yoursite/admin/settings/admin to use the SimplyCivi theme for "CiviCRM Admin Pages"
+
+5. Add your CiviCRM Blocks in the SimplyCivi theme : http://yoursite/admin/build/block/list/SimplyCivi :
+    
+    There are regions setup for Recent Items, Quick Add and Create New Record.
+    
+    You can add "Full Text Search" to the Header, and it will configure itself with a few bonuses.
 
 --- FEATURES --------------------------------------------------------
 
-- uses SimplyCivi 0.8 (or greater) CSS framework: http://www.SimplyCivicss.org/
 - normalizes Drupal's CSS to be consistent
 - properly aggregates all SimplyCivi CSS files into a single file when this setting is enabled
-- put scripts at bottom of page for nice performance gains, read more: http://developer.yahoo.com/performance/rules.html#js_bottom
-- flexible layout, from 1 to 3 columns, based on where you configure your blocks to show (left, center, right)
-- SEO optimization without the need for heavy modules and additional queries per page
-  - automatically adds META description to many pages, read more: http://googlewebmastercentral.blogspot.com/2007/09/improve-snippets-with-meta-description.html
-  - automatically adds META keywords if taxonomy exists on that node, read more: http://searchengineland.com/070905-194221.php
-  - avoid duplicate titles in search indexes for pager pages: http://www.seo-expert-blog.com/blog/avoiding-duplicate-title-tags-on-pager-pages-in-drupal
-- better forum icons, http://drupal.org/node/102743#comment-664157
-- improve forum display and performance, http://www.sysarchitects.com/node/70
-- prevents duplicate form submissions with jQuery, read more: http://tedserbinski.com/2007/01/11/how_to_prevent_duplicate_posts
-  loading animation care of: http://www.ajaxload.info/
-- shows the # of comments below a node since Drupal doesn't do this by default (usability)
-- add permalinks to each comment (usability)
-- highlight any comments by the author of the node
-- adds a "you need to login / register" box below all comments if you can't add a comment (usability)
-- supports conditional comment subjects, if the setting is off it won't show a chopped off title of the comment
-- uses CSSEdit http://macrabbit.com/cssedit/ comments for grouping of styles
-- lots of comments and theming tricks in template.php to learn from :)
+- Adds custom icons for contact types
+- Contact tabs are in a "sidebar" 
+- Drupal and CiviCRM messages are aggregated and positioned at the top of the page, clearly visible and hideable
+- CSS alterations to CiviCRM are broken out for easy adaption into your own theme
 
 Drupal 6 version:
 - Hover over blocks to reveal admin links to edit and configure the blocks as well as edit the menu blocks.
