@@ -39,6 +39,10 @@ Richard Burford, aka, psynaptic
 	Place it in you sites/all/themes directory (you may wish to rename the 
     directory to "SimplyCivi" - github adds a silly name) and enable it at 
     admin/build/themes
+    
+    ALTERNATE OPTION: clone the SimplyCivi project into your 
+    sites/all/themes directory with this command:
+    git clone git@github.com:kylejaster/SimplyCivi.git
 
 3. Download, install and enable the civicrm_theme module:
 
