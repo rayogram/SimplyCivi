@@ -1,7 +1,11 @@
 .ui-icon {
     background-image:url(../images/icons/ui-icons_454545_256x240.png);
+    height:16px;
+    width:16px;
+    display: block;
     }
-    
+    .ui-icon-arrowthickstop-1-e { background-position:-208px -48px; }
+    .ui-icon-arrowthickstop-1-w { background-position:-240px -48px; }
 .crm-icon,
 .block-civicrm #recently-viewed .crm-icon {
     background-image:url(../images/icons/crm-icons.png);
