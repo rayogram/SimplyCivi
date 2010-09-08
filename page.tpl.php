@@ -1,5 +1,5 @@
 <?php
-// $Id: page.tpl.php,v 1.15.4.7 2008/12/23 03:40:02 designerbrent Exp $ ?>
+// $Id: page.tpl.php,v 1.0 kylejaster Exp $ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -54,7 +54,7 @@
     <?php print $header; ?>
     <?php if ($breadcrumb != '') :?>
       <?php print $breadcrumb; ?>
-  <? endif; ?>
+  <?php endif; ?>
   </div>
   </div>
   <div id="container-wrapper">
@@ -133,7 +133,7 @@
       <div class="clear"></div>
     </div>
     </div>
-  <?php endif ?>
+  <?php endif; ?>
   
 
   <?php print $closure; ?>
