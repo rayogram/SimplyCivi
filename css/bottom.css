@@ -101,13 +101,8 @@
         color:#2786C2;
         position: relative;
         }
-        
-    #recent-items div#recently-viewed .crm-tooltip {
-        height: 300px;
-        width:800px;
-        }
 
-    #recent-items div#recently-viewed .crm-tooltip .crm-contact-tabs-list {display: none;}
+#recent-items .crm-loading-element { background-image:url("../images/loading-2f2f2e.gif"); width:20px; height:20px;}
 
 
 /* ================ */
