@@ -1,0 +1,31 @@
+/* ================ */
+/* ! recent items   */
+/* ================ */
+
+#recent-items { 
+    width: 960px;
+    margin: 0px auto;
+    }
+
+#recent-items h3 {
+    display: block;
+    float: left;
+    font-size: 11px;
+    color: #666;
+    font-weight: normal;
+    margin:4px 0px
+    }
+
+#recent-items #recently-viewed li {
+    background-color: transparent;
+    border: none;
+    float: left;
+    margin-right:1em;
+    }
+    
+    #recent-items div#recently-viewed a {
+        color:#2786C2;
+        position: relative;
+        }
+
+#recent-items .crm-loading-element { background-image:url("../images/loading-2f2f2e.gif"); width:20px; height:20px;}

@@ -15,6 +15,7 @@ stylesheets[screen,projection][] = css/colors.css
 stylesheets[screen,projection][] = css/contact-tabs.css
 stylesheets[screen,projection][] = css/accordions.css
 stylesheets[screen,projection][] = css/bottom.css
+stylesheets[screen,projection][] = css/recent-items.css
 stylesheets[screen,projection][] = css/icons.css
 stylesheets[screen,projection][] = css/style.css
 
