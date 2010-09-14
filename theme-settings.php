@@ -29,7 +29,7 @@ function SimplyCivi_settings($saved_settings, $subtheme_defaults = array()) {
 
   // Get the default values from the .info file.
   $defaults = SimplyCivi_theme_get_default_settings('SimplyCivi');
-print_r($defaults);
+
   // Allow a subtheme to override the default values.
   $defaults = array_merge($defaults, $subtheme_defaults);
 
