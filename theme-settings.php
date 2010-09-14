@@ -29,7 +29,7 @@ function SimplyCivi_settings($saved_settings, $subtheme_defaults = array()) {
 
   // Get the default values from the .info file.
   $defaults = SimplyCivi_theme_get_default_settings('SimplyCivi');
-
+print_r($defaults);
   // Allow a subtheme to override the default values.
   $defaults = array_merge($defaults, $subtheme_defaults);
 
@@ -57,6 +57,13 @@ function SimplyCivi_settings($saved_settings, $subtheme_defaults = array()) {
     '#title'         => t('Prevent Duplicate Submits'),
     '#default_value' => $settings['SimplyCivi_animated_submit'],
     '#description'   => t('This can be helpful to prevent users from hitting the submit button twice, however the autocomplete can interfere with this and cause it not to work. <a href="!link">More Information</a>', array('!link' => 'http://drupal.org/node/579070')),
+    );
+
+  $form['SimplyCivi_block_edit_links'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Show block edit and configure links for those with appropriate permissions'),
+    '#default_value' => $settings['SimplyCivi_block_edit_links'],
+    '#description'   => t('This setting will display links to configure blocks, edit blocks, or modify the menus for block menus for users with the appropriate permissions.  When enabled the links may obscure small blocks like the New User block.'),
     );
 
   // Return the additional form widgets
