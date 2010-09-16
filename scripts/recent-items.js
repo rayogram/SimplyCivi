@@ -20,7 +20,5 @@ $(document).ready(function() {
 		  $(this).removeClass('crm-tooltip-active');
 		  $(this).removeClass('crm-tooltip-down');
 		  }
-		)
-	.click(function() {return false});	
-	
+		)	
 	});
