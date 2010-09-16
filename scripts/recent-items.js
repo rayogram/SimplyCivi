@@ -10,7 +10,7 @@ $(document).ready(function() {
 		      }
 			if ($(this).children('.crm-tooltip-wrapper').length == '') {
 				$(this).append('<div class="crm-tooltip-wrapper"><div class="crm-tooltip"></div></div>');
-				itemurl = this.href.replace('contact', 'profile')+'&snippet=4&gid=8';
+				itemurl = this.href.replace('contact', 'profile')+'&snippet=4&gid=7';
 				$(this).children().children('.crm-tooltip')
 					.html('<div class="crm-loading-element"></div>')
 					.load(itemurl); /* different from civicrm: add snippet designation */
@@ -20,5 +20,6 @@ $(document).ready(function() {
 		  $(this).removeClass('crm-tooltip-active');
 		  $(this).removeClass('crm-tooltip-down');
 		  }
-		)	
+		)
+	
 	});
