@@ -17,6 +17,7 @@
         display: block;
         width: 100%;
         font-size: 12px;
+        white-space: normal;
         }
 
 #crm-container .ui-tabs-panel {
