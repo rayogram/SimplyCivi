@@ -41,8 +41,6 @@ function SimplyCivi_preprocess_page(&$vars) {
     $text = ($vars['site_name']) ? $logo_img . $text : $logo_img;
   }
   $vars['logo_block'] = (!$vars['site_name'] && !$vars['logo']) ? '' : l($text, '', array('attributes' => array('title' => $title . $site_slogan), 'html' => !empty($logo_img)));
-  // Even though the site_name is turned off, let's enable it again so it can be used later.
-  $vars['site_name'] = variable_get('site_name', '');
 
   //Play nicely with the page_title module if it is there.
   if (!module_exists('page_title')) {
