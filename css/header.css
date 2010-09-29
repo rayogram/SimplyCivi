@@ -9,7 +9,14 @@
 #site_name {
     padding-top: 27px;
     margin:6px 0px;
+    min-height: 40px;
     }
+    
+#site_name h1 {
+    margin-bottom: 0px; /* 17px top and bottom margins were being inherited - reset */
+    margin-top: 0px;
+    }
+    
 .has-messages #site_name {padding-top:0px;}
 
 #header a { text-decoration: none; }
