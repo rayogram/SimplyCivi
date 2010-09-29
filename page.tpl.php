@@ -39,12 +39,18 @@
        </div>
       </div>
       <div id="logo">
-        <img src="<?php print $logo; ?>" />
-      </div>
-      <h1 id="site_name">
-        <?php print $site_name; ?>
-      </h1>
-        
+        <?php if ($logo): ?>
+          <img src="<?php print $logo; ?>" />
+        <?php endif; ?>
+      </div> <!-- logo -->
+      <?php /* Design layout expects a site name, so include div for structure and style with min-height */ ?>
+      <div id="site_name">
+        <?php if ($site_name): ?>
+          <h1>
+            <?php print $site_name; ?>
+          </h1>
+        <?php endif; ?>
+      </div> <!-- site_name -->      
       
       <?php if ($search_box): ?>
         <div id="search-box" class="span-8 last prepend-16">
