@@ -28,4 +28,9 @@
         position: relative;
         }
 
-#recent-items .crm-loading-element { background-image:url("../images/loading-2f2f2e.gif"); width:20px; height:20px;}
+#recent-items .crm-loading-element { 
+    background-image:url("../images/loading-2f2f2e.gif"); 
+    width:20px; 
+    height:20px;
+    background-repeat: no-repeat;
+    }
