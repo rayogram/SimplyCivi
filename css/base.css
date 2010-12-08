@@ -29,7 +29,10 @@ a:link, a:visited {background:transparent;font-weight:normal;text-decoration:und
     margin:0px auto;
     }
 
-#container { position: relative;}
+#container { 
+    position: relative;
+    margin-bottom:40px;
+}
 
 /* @group blueprint overrides */
 
