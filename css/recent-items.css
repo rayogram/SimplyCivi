@@ -16,21 +16,52 @@
     margin:4px 0px
     }
 
-#recent-items #recently-viewed li {
+#recent-items #recently-viewed li.crm-recently-viewed {
     background-color: transparent;
-    border: none;
+    border: 1px solid transparent;
     float: left;
     margin-right:1em;
+    margin-top:-1px;
+    padding:1px 3px;
+    position: relative;
+    -webkit-border-radius: 4px 0px 4px 4px;
+    -moz-border-radius: 4px 0px 4px 4px;
+    border-radius: 4px 0px 4px 4px;
     }
+    
+    #recent-items #recently-viewed li.crm-recently-viewed:hover {
+        background-color: #F8F8F8;
+        border:1px solid #CECECE;
+        }
     
     #recent-items div#recently-viewed a {
         color:#2786C2;
-        position: relative;
+        position:relative;
+        top:-1px;
         }
+        #recent-items div#recently-viewed a .crm-icon { 
+            margin-top:0px;
+            position:relative;
+            top:2px;
+            }
+    
+    #recent-items #recently-viewed li ul.crm-recentview-wrapper {
+        top:0px;
+        right:-1px;
+        }
+    #recent-items #recently-viewed li ul.crm-recentview-wrapper li {
+        background-color: #F8F8F8;
+        border:1px solid #CECECE;
+        border-bottom: none;
+        padding:2px;
+        -webkit-border-radius: 4px 4px 0px 0px;
+        -moz-border-radius: 4px 4px 0px 0px;
+        border-radius: 4px 4px 0px 0px;
+        }
+    #recent-items #recently-viewed li ul.crm-recentview-wrapper li a:hover {
+        color:#2D6F96;
+        }
+     #recent-items #recently-viewed li ul.crm-recentview-wrapper li a.crm-actions-delete:hover {
+        color:#E43D2B;
+        }        
 
-#recent-items .crm-loading-element { 
-    background-image:url("../images/loading-2f2f2e.gif"); 
-    width:20px; 
-    height:20px;
-    background-repeat: no-repeat;
-    }

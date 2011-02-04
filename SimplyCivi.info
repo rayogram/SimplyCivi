@@ -26,7 +26,6 @@ stylesheets[screen,projection][] = css/civicrm-theme.css
 scripts[] = scripts/messages.js
 scripts[] = scripts/sidebars.js
 scripts[] = scripts/quickadd.js
-scripts[] = scripts/recent-items.js
 scripts[] = scripts/general.js
 scripts[] = scripts/search.js
 
