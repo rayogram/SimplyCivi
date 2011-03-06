@@ -8,7 +8,7 @@
     padding: 0px;
     }
     
-#mainTabContainer .crm-contact-tabs-list {
+#mainTabContainer .ui-tabs-nav {
     width: 15%;
     float:left;
     padding:4px;
