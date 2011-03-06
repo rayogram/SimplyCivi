@@ -578,3 +578,6 @@ input.form-submit {
 	border-radius:			3px;
     }
 
+#ui-datepicker-div {
+    background-color: #FFF;
+    }
