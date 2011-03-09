@@ -27,3 +27,4 @@
     }
    
 .ui-widget-content { background: transparent; } /* override of jquery-ui.css that creates weird white background */    
+.ui-dialog-content { background: #FFF; }
