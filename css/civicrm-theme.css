@@ -51,3 +51,5 @@ textarea,
     -khtml-border-radius:   2px; 
     border-radius:          2px;    
     }
+   
+#crm_loaded_content { display:none;}    

@@ -59,6 +59,14 @@ function SimplyCivi_settings($saved_settings, $subtheme_defaults = array()) {
     '#description'   => t('This can be helpful to prevent users from hitting the submit button twice, however the autocomplete can interfere with this and cause it not to work. <a href="!link">More Information</a>', array('!link' => 'http://drupal.org/node/579070')),
     );
 
+  $form['SimplyCivi_import_htmlmailings'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('CiviCRM Import HTML page function'),
+    '#default_value' => $settings['SimplyCivi_import_htmlmailings'],
+    '#description'   => t('Adds the ability to import a full HTML page directly into the CiviCRM HTML mailing form. This is an experimental feature and does not do anything intelligent - it will load scripts and all kinds of bad stuff if you enter a bad URL, so only load URLs of pages that are <em>specifically made for HTML emails</a> (e.g. no: javascript, relative-paths for images, advanced CSS, etc..)'),
+    );
+
+
   $form['SimplyCivi_block_edit_links'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Show block edit and configure links for those with appropriate permissions'),

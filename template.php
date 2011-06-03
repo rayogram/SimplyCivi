@@ -9,6 +9,10 @@ if (theme_get_setting('SimplyCivi_animated_submit')) {
   drupal_add_js(drupal_get_path('theme', 'SimplyCivi') .'/scripts/submit_animated.js');
 }
 
+if (theme_get_setting('SimplyCivi_import_htmlmailings')) {
+  drupal_add_js(drupal_get_path('theme', 'SimplyCivi') .'/scripts/htmlmailings.js');
+}
+
 /**
  * Implements HOOK_theme().
  */

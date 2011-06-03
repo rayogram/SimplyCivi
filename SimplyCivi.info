@@ -45,6 +45,7 @@ settings[SimplyCivi_block_edit_links]        = 1
 settings[SimplyCivi_rebuild_registry]        = 0
 settings[SimplyCivi_showgrid]                = 0
 settings[SimplyCivi_animated_submit]         = 1
+settings[SimplyCivi_import_htmlmailings]     = 0
 
 ; Information added by drupal.org packaging script on 2010-07-11
 version = "6.x-2.x-dev"
