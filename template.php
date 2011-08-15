@@ -50,7 +50,7 @@ function SimplyCivi_preprocess_page(&$vars) {
   if (!module_exists('page_title')) {
     // Fixup the $head_title and $title vars to display better.
     $title = drupal_get_title();
-    $headers = drupal_set_header();
+    $headers = drupal_get_headers();
 
     // if this is a 403 and they aren't logged in, tell them they need to log in
     if (strpos($headers, 'HTTP/1.1 403 Forbidden') && !$user->uid) {
