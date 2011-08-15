@@ -307,7 +307,7 @@ function SimplyCivi_help() {
 function SimplyCivi_breadcrumb($breadcrumb) {
   // Don't add the title if menu_breadcrumb exists. TODO: Add a settings 
   // checkbox to optionally control the display.
-  if (!module_exists(menu_breadcrumb) && count($breadcrumb) > 0) {
+  if (!module_exists('menu_breadcrumb') && count($breadcrumb) > 0) {
       $breadcrumb[] = drupal_get_title();
   }
   return '<div class="breadcrumb">'. implode(' &rsaquo; ', $breadcrumb) .'</div>';
